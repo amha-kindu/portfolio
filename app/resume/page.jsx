@@ -1,175 +1,98 @@
 "use client";
 
-import {
-  FaHtml5, FaCss3, FaJs,
-  FaReact, FaFigma, FaNodeJs
-} from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs } from 'react-icons/si';
-import {
-  Tabs, TabsContent, TabsList, TabsTrigger
-} from "@/components/ui/tabs";
-import {
-  Tooltip, TooltipContent, TooltipProvider, TooltipTrigger
-} from "@/components/ui/tooltip";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 const about = {
   title: "About me",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, natus nulla sequi neque nihil dolores quo dolor recusandae ea autem, aut accusantium. Molestias saepe voluptatem minima recusandae, maxime iste alias.",
+  description: "I'm a web developer with a strong background in Python, full-stack development, and machine learning, with a strong focus on large language models (LLMs) and AI-powered solutions. With over five years of hands-on experience, I’m passionate about building high-performance, scalable applications and using AI to solve complex problems. I enjoy crafting seamless digital experiences and developing intelligent, data-driven solutions powered by machine learning. I also bring a focus on DevOps practices, optimizing workflows, and maintaining secure, efficient infrastructure to support the growth and scalability of every project I work on.",
   info: [
-    {
-      name: "Name",
-      value: "Amha Kindu",
-    },
-    {
-      name: "Phone",
-      value: "(+251)978259900",
-    },
-    {
-      name: "Experience",
-      value: "5+ Years",
-    },
-    {
-      name: "Skype",
-      value: "amhakindu",
-    },
-    {
-      name: "Nationality",
-      value: "Ethiopian",
-    },
-    {
-      name: "Email",
-      value: "amhakindu@gmail.com",
-    },
-    {
-      name: "Freelance",
-      value: "Available",
-    },
-    {
-      name: "Languages",
-      value: "English, Amharic",
-    },
+    { name: "Name", value: "Amha Kindu" },
+    { name: "Phone", value: "(+251)978259900" },
+    { name: "Experience", value: "5+ Years" },
+    { name: "Languages", value: "English, Amharic" },
+    { name: "Freelance", value: "Available" },
+    { name: "Email", value: "amhakindu@gmail.com" },
+    { name: "Nationality", value: "Ethiopian" },
   ]
 }
 
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: "My Experience",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, natus nulla sequi neque nihil dolores quo dolor recusandae ea autem, aut accusantium. Molestias saepe voluptatem minima recusandae, maxime iste alias.",
+  description: "With a blend of freelance projects on Upwork and industry roles both in-peson & remote, I've built skills in web development and machine learning, delivering effective software solutions and gaining hands-on experience with advanced technologies.",
   items: [
-    {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present"
-    },
-    {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Web Design Studio",
-      position: "Front-End Deverloper Intern",
-      duration: "Summer 2021",
-    },
-    {
-      company: "Ecommerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
-    },
-    {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
-    },
-    {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
-    },
-    {
-      company: "Software Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018 ",
-    },
+    { company: "Freelance(Upwork)", position: "Freelance Web Developer", duration: "Jan 2020 - Present" },
+    { company: "John Galt Solutions", position: "Junior AI/ML Software Engineer", duration: "April 2024 - Oct 2024" },
+    { company: "Nexushub(Startup)", position: "Senior Python Developer", duration: "Feb 2024 - May 2024" },
+    { company: "Eskalate Africa Software Development S.C", position: "Web Development Intern", duration: "April 2022 - Jun 2022" },
   ]
 }
 
 const education = {
   icon: '/assets/resume/cap.svg',
   title: "My Education",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, natus nulla sequi neque nihil dolores quo dolor recusandae ea autem, aut accusantium. Molestias saepe voluptatem minima recusandae, maxime iste alias.",
+  description: "I have a strong academic foundation in software engineering and have also pursued additional training in competitive programming and full-stack web development. My studies at the Addis Ababa Institute of Technology equipped me with the skills to build innovative software solutions, while my experience with Africa To Silicon Valley further honed my development and problem-solving abilities.",
   items: [
-    {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023"
-    },
-    {
-      institution: "Codecademy",
-      degree: "Front-End Track",
-      duration: "2022"
-    },
-    {
-      institution: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021"
-    },
-    {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019"
-    },
-    {
-      institution: "Design School",
-      degree: "Diploma in Graphic Design",
-      duration: "2016 - 2018"
-    },
-    {
-      institution: "Community College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2014 - 2016"
-    },
-
+    { institution: "Addis Ababa Institute of Technology", degree: "B.S in Software Engineering", duration: "2019 - 2024" },
+    { institution: "Africa To Silicon Valley", degree: "Competitive Programming", duration: "2021 - 2022" },
+    { institution: "Africa To Silicon Valley", degree: "Full Stack Web Development Bootcamp", duration: "2021" }
   ]
 }
+
+const techStacks = [
+  { name: "HTML5", src: "/assets/skills/icons/HTML5.svg" },
+  { name: "CSS3", src: "/assets/skills/icons/CSS3.svg" },
+  { name: "JavaScript", src: "/assets/skills/icons/JavaScript.svg" },
+  { name: "TypeScript", src: "/assets/skills/icons/TypeScript.svg" },
+  { name: "React", src: "/assets/skills/icons/React.svg" },
+  { name: "Tailwind CSS", src: "/assets/skills/icons/Tailwind CSS.svg" },
+  { name: "Next.js", src: "/assets/skills/icons/Next.js.svg" },
+  { name: "Node.js", src: "/assets/skills/icons/Node.js.svg" },
+  { name: "Python", src: "/assets/skills/icons/Python.svg" },
+  { name: "Django", src: "/assets/skills/icons/Django.svg" },
+  { name: "Django REST", src: "/assets/skills/icons/Django REST.svg" },
+  { name: "FastAPI", src: "/assets/skills/icons/FastAPI.svg" },
+  { name: "Flask", src: "/assets/skills/icons/Flask.svg" },
+  { name: "Langchain", src: "/assets/skills/icons/Langchain.png" },
+  { name: "MySQL", src: "/assets/skills/icons/MySQL.svg" },
+  { name: "MongoDB", src: "/assets/skills/icons/MongoDB.svg" },
+  { name: "PostgresSQL", src: "/assets/skills/icons/PostgresSQL.svg" },
+  { name: "Redis", src: "/assets/skills/icons/Redis.svg" },
+  { name: "RabbitMQ", src: "/assets/skills/icons/RabbitMQ.svg" },
+  { name: "Apache Kafka", src: "/assets/skills/icons/Apache Kafka.svg" },
+  { name: "Nest.js", src: "/assets/skills/icons/Nest.js.svg" },
+  { name: "TensorFlow", src: "/assets/skills/icons/TensorFlow.svg" },
+  { name: "PyTorch", src: "/assets/skills/icons/PyTorch.svg" },
+  { name: "NGINX", src: "/assets/skills/icons/NGINX.svg" },
+  { name: "Docker", src: "/assets/skills/icons/Docker.svg" },
+  { name: "AWS", src: "/assets/skills/icons/AWS.svg" },
+  { name: "Git", src: "/assets/skills/icons/Git.svg" },
+  { name: "Swagger", src: "/assets/skills/icons/Swagger.svg" },
+]
 
 const skills = {
   title: "My Skills",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, natus nulla sequi neque nihil dolores quo dolor recusandae ea autem, aut accusantium. Molestias saepe voluptatem minima recusandae, maxime iste alias.",
-  skillList: [
-    {
-      name: "Html5",
-      icon: <FaHtml5 />
-    },
-
-    {
-      name: "CSS3",
-      icon: <FaCss3 />
-    },
-    {
-      name: "Javascript",
-      icon: <FaJs />
-    },
-    {
-      name: "React.js",
-      icon: <FaReact />
-    },
-    {
-      name: "Next.js",
-      icon: <SiNextdotjs />
-    },
-    {
-      name: "Tailwind Css",
-      icon: <SiTailwindcss />
-    },
-    {
-      name: "Node.js",
-      icon: <FaNodeJs />
-    }
-  ]
+  description: "I'm skilled in building AI-powered full-stack web apps. I build interactive, high-performance apps with optimized performance using caching and message brokers to deploy scalable apps with robust back-end architecture. I also have experience in working with various ML tools including large language models (using APIs or local) and I’m passionate about building, training, and deploying models to create AI-powered solutions for real-world challenges.",
+  skillList: techStacks.map((stack, index) => {
+    return {
+      name: stack.name,
+      icon: (
+        <Image
+          width={100}
+          height={100}
+          src={stack.src}
+          alt={stack.name}
+          className="h-fit m-2"
+        />
+      )
+    };
+  })
 }
+
 
 
 const Resume = () => {
@@ -202,7 +125,7 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full min-h-[650px]">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
+                <p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
@@ -233,7 +156,7 @@ const Resume = () => {
             <TabsContent value="education" className="w-full min-h-[650px]">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+                <p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {
@@ -265,22 +188,23 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
+                  <p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                <ul className="flex flex-wrap gap-8">
                   {skills.skillList.map((skill, index) => {
-                    return <li key={index}>
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                            <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p className="capitalize">{skill.name}</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </li>
+                    return (
+                      <li key={index}>
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="flex justify-center items-center w-16">
+                              {skill.icon}
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="capitalize">{skill.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>);
                   })}
                 </ul>
               </div>
@@ -290,7 +214,7 @@ const Resume = () => {
             <TabsContent value="about" className="w-full text-center xl:text-left min-h-[650px]">
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">

@@ -7,29 +7,30 @@ import { BsArrowDownRight } from "react-icons/bs";
 const services = [
   {
     num: '01',
-    title: "Web Development",
-    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo illo hic saepe voluptatum ex excepturi. Eum ad sapiente architecto et tempore at laborum sunt ea explicabo impedit. Praesentium, eius rem!",
+    title: "Full-Stack Web Development",
+    description: "I specialize in developing end-to-end, high-performance web applications using modern techstacks. I focus on creating scalable, maintainable code that enhances user experience and meets business goals. My approach ensures applications are optimized for performance, security, and responsiveness across all devices.",
     href: ""
   },
   {
     num: '02',
-    title: "UI/UX Design",
-    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo illo hic saepe voluptatum ex excepturi. Eum ad sapiente architecto et tempore at laborum sunt ea explicabo impedit. Praesentium, eius rem!",
+    title: "AI-Powered Applications",
+    description: "I design and implement AI-driven applications that leverage machine learning and large language models (LLMs) to solve complex problems. From building recommendation engines to chatbots, I integrate AI into products that improve user engagement, automate decision-making, and provide data-driven insights.",
     href: ""
   },
   {
     num: '03',
-    title: "Logo Design",
-    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo illo hic saepe voluptatum ex excepturi. Eum ad sapiente architecto et tempore at laborum sunt ea explicabo impedit. Praesentium, eius rem!",
+    title: "Machine Learning Solutions",
+    description: "I build, train, and deploy tailored machine learning models to solve specific business problems, such as predictive analytics, anomaly detection, and natural language processing. From data preprocessing to model deployment, I guide the entire lifecycle of ML projects, enabling businesses to harness the full potential of their data and gain actionable insights.",
     href: ""
   },
   {
     num: '04',
-    title: "SEO",
-    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo illo hic saepe voluptatum ex excepturi. Eum ad sapiente architecto et tempore at laborum sunt ea explicabo impedit. Praesentium, eius rem!",
+    title: "DevOps & Cloud Infrastructure",
+    description: "I specialize in optimizing development workflows and deploying scalable, reliable infrastructure using DevOps practices. From continuous integration and delivery (CI/CD) pipelines to automating deployment processes, I help businesses streamline their development cycles, reduce downtime, and ensure efficient resource management.",
     href: ""
   }
 ]
+
  
 
 const Services = () => {

@@ -21,7 +21,7 @@ const projects = [
     description: "Socialaize is a social media management system that helps users to manage and schedule their posts on various social media platforms, including Twitter, LinkedIn, and other. Additionally, it offers features such as commenting, replying to comments, and post recommendations for different social media platforms.",
     stack: [
       "React", "Tailwind CSS", "Django", "PostgresSQL", "AWS", "Docker", "OpenAI API", "Twitter API", "Redis"
-    ].map((item) => (<TechStack size={40} name={item} />)),
+    ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
     images: [
       "/assets/work/thumb1.png",
       "/assets/work/thumb2.png",
@@ -36,7 +36,7 @@ const projects = [
     description: "InboXpert is a cutting-edge, AI-enhanced email client built to streamline communication and optimize inbox management. It integrates OpenAI’s API to offer AI-driven functionalities such as predictive sorting, smart categorization, and automated responses.",
     stack: [
       "React", "Tailwind CSS", "Next.js", "OpenAI API", "PostgresSQL", "Stripe", "Clerk", "Prisma", "Pinecone"
-    ].map((item) => (<TechStack size={40} name={item} />)),
+    ].map((item,index) => (<TechStack key={index} size={40} name={item} />)),
     images: [
       "/assets/work/thumb1.png",
       "/assets/work/thumb2.png",
@@ -51,7 +51,7 @@ const projects = [
     description: "FastLlama is a scalable local knowledge base augmented with an LLM to provide scalable question-answering capabilities for alot of users. The system supports two operational modes: Question Answering and Chatbot.",
     stack: [
       "FastAPI", "OpenAI API", "MongoDB", "LlamaIndex", "Swagger"
-    ].map((item) => (<TechStack size={40} name={item} />)),
+    ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
     images: [
       "/assets/work/thumb1.png",
       "/assets/work/thumb2.png",
@@ -130,7 +130,6 @@ const Work = () => {
             </div>
             <div className="w-full xl:w-[50%]">
               <Swiper
-                key={index}
                 loop={true}
                 pagination={{
                   clickable: true,

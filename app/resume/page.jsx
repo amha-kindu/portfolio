@@ -1,10 +1,10 @@
 "use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 import Image from 'next/image';
+import TechStack from "@/components/TechStack";
 
 const about = {
   title: "About me",
@@ -57,7 +57,6 @@ const techStacks = [
   { name: "Django REST", src: "/assets/skills/icons/Django REST.svg" },
   { name: "FastAPI", src: "/assets/skills/icons/FastAPI.svg" },
   { name: "Flask", src: "/assets/skills/icons/Flask.svg" },
-  { name: "Langchain", src: "/assets/skills/icons/Langchain.png" },
   { name: "MySQL", src: "/assets/skills/icons/MySQL.svg" },
   { name: "MongoDB", src: "/assets/skills/icons/MongoDB.svg" },
   { name: "PostgresSQL", src: "/assets/skills/icons/PostgresSQL.svg" },
@@ -72,6 +71,9 @@ const techStacks = [
   { name: "AWS", src: "/assets/skills/icons/AWS.svg" },
   { name: "Git", src: "/assets/skills/icons/Git.svg" },
   { name: "Swagger", src: "/assets/skills/icons/Swagger.svg" },
+  { name: "OpenAI API", src: "/assets/skills/icons/OpenAI API.svg" },
+  { name: "Stripe", src: "/assets/skills/icons/Stripe.svg" },
+  { name: "Clerk", src: "/assets/skills/icons/Clerk.svg" },
 ]
 
 const skills = {
@@ -194,16 +196,7 @@ const Resume = () => {
                   {skills.skillList.map((skill, index) => {
                     return (
                       <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="flex justify-center items-center w-16">
-                              {skill.icon}
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
+                        <TechStack size={50} name={skill.name} />
                       </li>);
                   })}
                 </ul>

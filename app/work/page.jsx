@@ -60,10 +60,27 @@ const projects = [
       "/assets/work/InboXpert/subscription.png",
     ],
     live: "",
-    github: ""
+    github: "https://github.com/amha-kindu/InboXpert"
   },
   {
     num: "03",
+    title: "Terguami",
+    description: "Terguami is a desktop application built using pyQt5 for translating text from English to Amharic. It is powered by a transformer model built from scratch using Pytorch & trained on a custom curated English-Amharic parallel text dataset on Google Colab. The application translates English text that is atmost 50 tokens in length to Amharic text.",
+    stack: [
+      "Python", "PyQt5", "PyTorch", "GoogleColab", "NLTK"
+    ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
+    images: [
+      "/assets/work/Terguami/Example-1.png",
+      "/assets/work/Terguami/Example-2.png",
+      "/assets/work/Terguami/Example-3.png",
+      "/assets/work/Terguami/Example-4.png",
+      "/assets/work/Terguami/Example-5.png",
+    ],
+    live: "",
+    github: "https://github.com/amha-kindu/machine-translation"
+  },
+  {
+    num: "04",
     title: "FastLlama",
     description: "FastLlama is a scalable local knowledge base augmented with an LLM to provide scalable question-answering capabilities for alot of users. The system supports two operational modes: Question Answering and Chatbot.",
     stack: [

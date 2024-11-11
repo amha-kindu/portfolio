@@ -192,7 +192,12 @@ const Work = () => {
 
         // Project Images Dialog
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="relative w-full h-[90vh] max-w-7xl">
+          <motion.div
+            className="relative w-full h-[90vh] max-w-7xl"
+            initial={{ scale: 0.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
+          >
 
             <Carousel className="w-full h-full">
               <CarouselContent>
@@ -210,7 +215,7 @@ const Work = () => {
               <CarouselPrevious />
               <CarouselNext />
             </Carousel>
-          </div>
+          </motion.div>
           <button
             onClick={() => setSelectedProject(null)}
             className="absolute top-5 right-20 text-accent hover:text-red-600 text-5xl font-bold z-10 hover:rotate-90 transition duration-300"

@@ -52,12 +52,12 @@ const projects = [
       "React", "Tailwind CSS", "Next.js", "OpenAI API", "PostgresSQL", "Stripe", "Clerk", "Prisma", "Pinecone"
     ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
     images: [
-      "/assets/work/inboxpert/homepage.png",
-      "/assets/work/inboxpert/signin.png",
-      "/assets/work/inboxpert/dashboard.webp",
-      "/assets/work/inboxpert/compose-email.png",
-      "/assets/work/inboxpert/ai-compose.png",
-      "/assets/work/inboxpert/subscription.png",
+      "/assets/work/InboXpert/homepage.png",
+      "/assets/work/InboXpert/signin.png",
+      "/assets/work/InboXpert/dashboard.webp",
+      "/assets/work/InboXpert/compose-email.png",
+      "/assets/work/InboXpert/ai-compose.png",
+      "/assets/work/InboXpert/subscription.png",
     ],
     live: "",
     github: ""

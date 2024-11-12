@@ -141,13 +141,13 @@ const Resume = () => {
                                                 >
                                                     <span className="text-accent">{item.duration}</span>
                                                     <h3
-                                                        className="text-xl max-w-[260px] min-h-[60px] text center lg:text-left"
+                                                        className="leading-tight text-xl max-w-[260px] min-h-[60px] text center lg:text-left"
                                                     >
                                                         {item.position}
                                                     </h3>
                                                     <div className="flex items-center gap-3">
                                                         <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                                                        <p className="text-white/60">{item.company}</p>
+                                                        <p className="text-white/60 leading-tight">{item.company}</p>
                                                     </div>
                                                 </li>
                                             );
@@ -161,7 +161,7 @@ const Resume = () => {
                         <TabsContent value="education" className="w-full min-h-[650px]">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                                <p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+                                <p className="w-full max-w-[900px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
                                 <ScrollArea className="h-[400px]">
                                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                                         {education.items.map((item, index) => {
@@ -172,13 +172,13 @@ const Resume = () => {
                                                 >
                                                     <span className="text-accent">{item.duration}</span>
                                                     <h3
-                                                        className="text-xl max-w-[260px] min-h-[60px] text center lg:text-left"
+                                                        className="leading-tight text-xl min-h-[60px] text center lg:text-left"
                                                     >
                                                         {item.degree}
                                                     </h3>
-                                                    <div className="flex items-center gap-3">
+                                                    <div className="flex items-center gap-4">
                                                         <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                                                        <p className="text-white/60">{item.institution}</p>
+                                                        <p className="text-white/60 leading-tight">{item.institution}</p>
                                                     </div>
                                                 </li>
                                             );

@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       <head>
         <link rel="icon" href="/logo.svg" type="image/svg+xml" />
       </head>
@@ -26,9 +26,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         <StairTransition/>
-        <PageTransition>
-          {children}
-        </PageTransition>
+        {children}
       </body>
     </html>
   );

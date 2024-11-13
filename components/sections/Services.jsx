@@ -8,25 +8,25 @@ const services = [
     {
         num: '01',
         title: "Full-Stack Web Development",
-        description: "I specialize in developing end-to-end, high-performance web applications using modern techstacks. I focus on creating scalable, maintainable code that enhances user experience and meets business goals. My approach ensures applications are optimized for performance, security, and responsiveness across all devices.",
+        description: "I specialize in developing end-to-end, high-performance web applications using modern techstacks. I focus on creating scalable, maintainable code that enhances user experience and meets business goals.",
         href: ""
     },
     {
         num: '02',
         title: "AI-Powered Applications",
-        description: "I design and implement AI-driven applications that leverage machine learning and large language models (LLMs) to solve complex problems. From building recommendation engines to chatbots, I integrate AI into products that improve user engagement, automate decision-making, and provide data-driven insights.",
+        description: "I build AI-driven web applications using machine learning and LLMs to boost user engagement, automate workflows, and deliver data-driven insights through features like recommendation engines and chatbots.",
         href: ""
     },
     {
         num: '03',
         title: "Machine Learning Solutions",
-        description: "I build, train, and deploy tailored machine learning models to solve specific business problems, such as predictive analytics, anomaly detection, and natural language processing. From data preprocessing to model deployment, I guide the entire lifecycle of ML projects, enabling businesses to harness the full potential of their data and gain actionable insights.",
+        description: "I build, train, and deploy ML models to solve specific problems like predictive analytics, anomaly detection, and natural language processing. From data preprocessing & training to model deployment, I guide the entire lifecycle of ML projects.",
         href: ""
     },
     {
         num: '04',
         title: "DevOps & Cloud Infrastructure",
-        description: "I specialize in optimizing development workflows and deploying scalable, reliable infrastructure using DevOps practices. From continuous integration and delivery (CI/CD) pipelines to automating deployment processes, I help businesses streamline their development cycles, reduce downtime, and ensure efficient resource management.",
+        description: "I specialize in streamlining development workflows and deploying scalable, reliable infrastructures. Leveraging tools like Docker and cloud services like AWS, I build and manage CI/CD pipelines and automate deployment processes to ensure seamless, resilient delivery.",
         href: ""
     }
 ]
@@ -37,7 +37,7 @@ const Services = () => {
     return (
         <section id="services" className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-8">
             <div className="container mx-auto">
-                <h1 className="h1 w-full text-center mb-8 text-accent">Services</h1>
+                <h1 className="h1 w-full text-center mb-12 text-accent">Services</h1>
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{

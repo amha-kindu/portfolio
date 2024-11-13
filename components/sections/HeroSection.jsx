@@ -6,7 +6,7 @@ import { FiDownload } from "react-icons/fi"
 
 const HeroSection = () => {
     return (
-        <section id="hero-section" className="h-full mt-24 mb-8">
+        <section id="hero-section" className="h-full w-full mt-24 mb-8">
             <div className="container mx-auto">
                 <div className="flex flex-col gap-2 xl:gap-32 xl:flex-row  items-center sm:justify-start justify-between xl:pt-8 xl:pb-24">
                     {/* text */}
@@ -14,7 +14,7 @@ const HeroSection = () => {
                         <span className="text-xl">Senior Web Developer</span>
                         <h1 className="h1">Hello, I'm <br /><span className="text-accent">Amha Kindu</span></h1>
                         <p className="max-w-[500px] mb-9 text-white/80">
-                            I specialize in building dynamic, AI-powered web applications, leveraging a wide range of tech stacks and advanced machine learning tools, including large language models (LLMs), to create intuitive and high-performing digital experiences.
+                            I specialize in building dynamic web applications, leveraging a wide range of tech stacks and advanced machine learning tools, including large language models (LLMs), to create interactive and user-friendly apps.
                         </p>
                         {/* button and socials */}
                         <div className="flex flex-col xl:flex-row items-center gap-8">

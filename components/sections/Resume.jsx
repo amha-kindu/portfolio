@@ -8,7 +8,7 @@ import TechStack from "@/components/TechStack";
 
 const about = {
     title: "About me",
-    description: "I'm a web developer with a strong background in Python, full-stack development, and machine learning, with a strong focus on large language models (LLMs) and AI-powered solutions. With over five years of hands-on experience, I’m passionate about building high-performance, scalable applications and using AI to solve complex problems. I enjoy crafting seamless digital experiences and developing intelligent, data-driven solutions powered by machine learning. I also bring a focus on DevOps practices, optimizing workflows, and maintaining secure, efficient infrastructure to support the growth and scalability of every project I work on.",
+    description: "I'm a web developer with a strong background in Python, full-stack development, and machine learning, with a strong focus on large language models (LLMs) and AI-powered solutions. With over five years of hands-on experience, I’m passionate about building high-performance, scalable web applications and using AI/ML technologies to solve real-world problems.",
     info: [
         { name: "Name", value: "Amha Kindu" },
         { name: "Phone", value: "(+251)978259900" },
@@ -23,7 +23,7 @@ const about = {
 const experience = {
     icon: '/assets/resume/badge.svg',
     title: "My Experience",
-    description: "With a blend of freelance projects on Upwork and industry roles both in-peson & remote, I've built skills in web development and machine learning, delivering effective software solutions and gaining hands-on experience with advanced technologies.",
+    description: "With a blend of freelance projects on Upwork and industry roles both in-person & remote, I've built skills in web development and machine learning, delivering effective software solutions and gaining hands-on experience with advanced technologies.",
     items: [
         { company: "Freelance(Upwork)", position: "Freelance Web Developer", duration: "Jan 2020 - Present" },
         { company: "John Galt Solutions", position: "Junior AI/ML Software Engineer", duration: "April 2024 - Oct 2024" },
@@ -127,7 +127,7 @@ const Resume = () => {
                     </TabsList>
                     <div className="min-h-[70vh] w-full">
                         {/* experience */}
-                        <TabsContent value="experience" className="w-full min-h-[650px]">
+                        <TabsContent value="experience" className="w-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                                 <p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
@@ -158,7 +158,7 @@ const Resume = () => {
                         </TabsContent>
 
                         {/* education */}
-                        <TabsContent value="education" className="w-full min-h-[650px]">
+                        <TabsContent value="education" className="w-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                 <h3 className="text-4xl font-bold">{education.title}</h3>
                                 <p className="w-full max-w-[900px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
@@ -189,7 +189,7 @@ const Resume = () => {
                         </TabsContent>
 
                         {/* skills */}
-                        <TabsContent value="skills" className="w-full min-h-[650px]">
+                        <TabsContent value="skills" className="w-full">
                             <div className="flex flex-col gap-[30px]">
                                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                     <h3 className="text-4xl font-bold">{skills.title}</h3>
@@ -207,7 +207,7 @@ const Resume = () => {
                         </TabsContent>
 
                         {/* about */}
-                        <TabsContent value="about" className="w-full text-center xl:text-left min-h-[650px]">
+                        <TabsContent value="about" className="w-full text-center xl:text-left">
                             <div className="flex flex-col gap-[30px]">
                                 <h3 className="text-4xl font-bold">{about.title}</h3>
                                 <p className=" text-white/60 mx-auto xl:mx-0">

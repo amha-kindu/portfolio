@@ -81,6 +81,44 @@ const projects = [
     },
     {
         num: "04",
+        title: "Rideshare",
+        description: "Rideshare is a mobile-based platform enabling users to book, share, and manage rides collaboratively. Key features include a dynamic ride-booking system, real-time ride notifications, and comprehensive user profile management, all backed by secure, scalable backend architecture. The platform integrates advanced scheduling algorithms to match riders efficiently, optimizes route sharing.",
+        stack: [
+            "CSharp", "NET", "NET CORE", "SignalR", "Mapbox", "PostgresSQL", "Docker", "Swagger"
+        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
+        images: [
+            "/assets/work/Rideshare/Homepage.png",
+            "/assets/work/Rideshare/About.png",
+            "/assets/work/Rideshare/HowItWorks.png",
+            "/assets/work/Rideshare/API.png",
+            "/assets/work/Rideshare/API-2.png",
+            "/assets/work/Rideshare/API-3.png",
+            "/assets/work/Rideshare/API-4.png",
+            "/assets/work/Rideshare/API-5.png",
+        ],
+        live: "https://rideshare-swdm.onrender.com/swagger/index.html",
+        github: "https://github.com/amhakindu/Rideshare"
+    },
+    {
+        num: "05",
+        title: "NFT-Gebeya",
+        description: "NFT-Gebeya is  a robust online platform that facilitates the trading and showcasing of digital products as NFTs. The platform will support a wide range of digital assets, including artwork, photography, ebooks, collectibles, audio and video.",
+        stack: [
+            "CSharp", "NET", "NET CORE", "SignalR", "PostgresSQL", "AWS", "Docker", "Swagger", "OpenAI API", "Ethereum", "Solidity"
+        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
+        images: [
+            "/assets/work/NFT-Gebeya/Homepage.png",
+            "/assets/work/NFT-Gebeya/HowItWorks.png",
+            "/assets/work/NFT-Gebeya/TopCreators.png",
+            "/assets/work/NFT-Gebeya/UserProfile.png",
+            "/assets/work/NFT-Gebeya/Auction.png",
+            "/assets/work/NFT-Gebeya/MintNFT.png",
+        ],
+        live: "https://nft-marketplace-rose-zeta.vercel.app/",
+        github: "https://github.com/KaleabKindu/NFT_Marketplace"
+    },
+    {
+        num: "06",
         title: "FastLlama",
         description: "FastLlama is a scalable local knowledge base augmented with an LLM to provide scalable question-answering capabilities for alot of users. The system supports two operational modes: Question Answering and Chatbot.",
         stack: [
@@ -118,7 +156,7 @@ const Work = () => {
             <div className="container mx-auto flex flex-col gap-8">
                 {projects.map((project, index) => (
                     <div key={index} className="flex flex-col xl:flex-row xl:gap-[30px] border-b-2 border-white/10">
-                        <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+                        <div className="w-full xl:w-[50%] flex flex-col xl:justify-between order-2 xl:order-none">
                             <div className="flex flex-col gap-[30px]">
                                 <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                                     {project.num}
@@ -126,7 +164,7 @@ const Work = () => {
                                 <div className="flex justify-between">
                                     <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.title}</h2>
                                     <div className="flex items-center gap-4">
-                                        <Link href={project.live}>
+                                        <Link href={project.live} target="_blank">
                                             <TooltipProvider delayDuration={100}>
                                                 <Tooltip>
                                                     <TooltipTrigger className="w-[40px] h-[40px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -138,7 +176,7 @@ const Work = () => {
                                                 </Tooltip>
                                             </TooltipProvider>
                                         </Link>
-                                        <Link href={project.github}>
+                                        <Link href={project.github} target="_blank">
                                             <TooltipProvider delayDuration={100}>
                                                 <Tooltip>
                                                     <TooltipTrigger className="w-[40px] h-[40px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -229,7 +267,7 @@ const Work = () => {
                                                             alt=""
                                                         />
                                                     </div>
-                                                    <FullscreenIcon className="absolute left-2 bottom-2 w-8 h-8 text-black hover:scale-125 hover:text-accent hover:cursor-pointer transition-all" onClick={() => setSelectedProject(index)} />
+                                                    <FullscreenIcon className="absolute left-2 bottom-2 w-8 h-8 text-accent hover:scale-125 hover:text-accent/50 hover:cursor-pointer transition-all" onClick={() => setSelectedProject(index)} />
                                                 </div>
                                             </SwiperSlide>
                                         );

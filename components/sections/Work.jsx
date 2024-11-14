@@ -116,21 +116,6 @@ const projects = [
         ],
         live: "https://nft-marketplace-rose-zeta.vercel.app/",
         github: "https://github.com/KaleabKindu/NFT_Marketplace"
-    },
-    {
-        num: "06",
-        title: "FastLlama",
-        description: "FastLlama is a scalable local knowledge base augmented with an LLM to provide scalable question-answering capabilities for alot of users. The system supports two operational modes: Question Answering and Chatbot.",
-        stack: [
-            "Python", "FastAPI", "OpenAI API", "MongoDB", "LlamaIndex", "Swagger"
-        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
-        images: [
-            "/assets/work/thumb1.png",
-            "/assets/work/thumb2.png",
-            "/assets/work/thumb3.png",
-        ],
-        live: "",
-        github: ""
     }
 ]
 

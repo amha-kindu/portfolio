@@ -53,7 +53,7 @@ const Contact = () => {
                     <div className="xl:w-[64%] order-2 xl:order-none">
                         <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" action="">
                             <h3 className="text-4xl text-accent">Let's work together</h3>
-                            <p className="text-white/60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore excepturi numquam nemo quam deserunt dolor accusantium eligendi explicabo a, sit laborum voluptates. Dolorum, rerum! Sapiente nostrum perspiciatis blanditiis impedit iste!</p>
+                            <p className="text-white/60">Have questions or a project idea? Reach out — I'd love to chat and help bring your next project to life.</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <Input
                                     type="firstname"
@@ -73,18 +73,18 @@ const Contact = () => {
                                 />
                             </div>
                             <Select
-                                onValueChange={(value) => console.log(value)}
-                                defaultValue="Select a service"
+                                defaultValue="sas"
                             >
                                 <SelectTrigger className="w-full">
                                     <SelectValue placeholder="Select a service" />
                                 </SelectTrigger>
                                 <SelectContent>
                                     <SelectGroup>
-                                        <SelectLabel>Select a service</SelectLabel>
-                                        <SelectItem value="est">Web Development</SelectItem>
-                                        <SelectItem value="cst">UI/UX Design</SelectItem>
-                                        <SelectItem value="mst">Logo Design</SelectItem>
+                                        <SelectItem value="sas" disabled>Select a service</SelectItem>
+                                        <SelectItem value="est">Full-Stack Web Development</SelectItem>
+                                        <SelectItem value="cst">ML Solutions</SelectItem>
+                                        <SelectItem value="mst">AI-Powered Web Development</SelectItem>
+                                        <SelectItem value="dst">DevOps</SelectItem>
                                     </SelectGroup>
                                 </SelectContent>
                             </Select>

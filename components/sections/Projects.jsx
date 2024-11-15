@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/tooltip";
 import Link from "next/link";
 import Image from "next/image";
-import WorkSliderBtns from '@/components/WorkSliderBtns';
+import ProjectSliderBtns from '@/components/ProjectSliderBtns';
 import TechStack from '@/components/TechStack';
 import {
     Carousel,
@@ -120,12 +120,12 @@ const projects = [
 ]
 
 
-const Work = () => {
+const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(null);
 
     return (
         <motion.div
-            id="work"
+            id="projects"
             initial={{ opacity: 0 }}
             animate={{
                 opacity: 1,
@@ -137,7 +137,7 @@ const Work = () => {
             }}
             className="min-h-[80vh] w-full flex flex-col justify-center py-12 xl:px-0"
         >
-            <h1 className="h1 w-full text-center mb-8 text-accent">Work</h1>
+            <h1 className="h1 w-full text-center mb-8 text-accent">Projects</h1>
             <div className="container mx-auto flex flex-col gap-8">
                 {projects.map((project, index) => (
                     <div key={index} className="flex flex-col xl:flex-row xl:gap-[30px] border-b-2 border-white/10">
@@ -258,7 +258,7 @@ const Work = () => {
                                         );
                                     })
                                     }
-                                    <WorkSliderBtns
+                                    <ProjectSliderBtns
                                         containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                                         btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
                                     />
@@ -272,4 +272,4 @@ const Work = () => {
     );
 }
 
-export default Work
+export default Projects

@@ -2,7 +2,7 @@ import Contact from '@/components/sections/Contact'
 import HeroSection from '@/components/sections/HeroSection'
 import Resume from '@/components/sections/Resume'
 import Services from '@/components/sections/Services'
-import Work from '@/components/sections/Work'
+import Projects from '@/components/sections/Projects'
 import React from 'react'
 
 const Home = () => {
@@ -17,8 +17,8 @@ const Home = () => {
             {/* Resume Section */}
             <Resume/>
 
-            {/* Work Section */}
-            <Work/>
+            {/* Projects Section */}
+            <Projects/>
 
             {/* Contact Section */}
             <Contact/>

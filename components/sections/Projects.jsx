@@ -65,19 +65,18 @@ const projects = [
     {
         num: "03",
         title: "Terguami",
-        description: "Terguami is a desktop application built using pyQt5 for translating text from English to Amharic. It is powered by a transformer model built from scratch using Pytorch & trained on a custom curated English-Amharic parallel text dataset on Google Colab. The application translates English text that is atmost 50 tokens in length to Amharic text.",
+        description: "Terguami is a FastAPI application powered by a custom transformer model built with PyTorch. It provides fast and accurate English-to-Amharic translations, with features like Docker support and interactive OpenAPI documentation, making it a scalable and easy-to-deploy solution for machine translation.",
         stack: [
-            "Python", "PyQt5", "PyTorch", "GoogleColab", "NLTK"
+            "Python", "PyTorch", "GoogleColab", "NLTK", "FastAPI", "Docker", "Swagger"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
             "/assets/work/Terguami/Example-1.png",
             "/assets/work/Terguami/Example-2.png",
             "/assets/work/Terguami/Example-3.png",
             "/assets/work/Terguami/Example-4.png",
-            "/assets/work/Terguami/Example-5.png",
         ],
         live: "",
-        github: "https://github.com/amha-kindu/machine-translation"
+        github: "https://github.com/amha-kindu/terguami"
     },
     {
         num: "04",
@@ -220,7 +219,7 @@ const Projects = () => {
                                     </motion.div>
                                     <button
                                         onClick={() => setSelectedProject(null)}
-                                        className="absolute top-6 right-10 text-accent hover:text-red-600 text-5xl font-bold z-10 hover:rotate-90 transition duration-300"
+                                        className="absolute top-5 right-5 text-accent hover:text-red-600 text-5xl font-bold z-10 hover:rotate-90 transition duration-300"
                                         aria-label="Close"
                                     >
                                         &times;
@@ -245,14 +244,15 @@ const Projects = () => {
                                     {project.images.map((image, idx) => {
                                         return (
                                             <SwiperSlide key={idx} className="w-full">
-                                                <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                                                <div className="h-[460px] relative group flex justify-center items-center bg-accent">
                                                     <div className="relative w-full h-full">
                                                         <Image
-                                                            src={image} fill className="object-cover"
-                                                            alt=""
+                                                            src={image} fill className="object-cover hover:scale-95 hover:cursor-pointer transition-all"
+                                                            alt={`${project.title} Image #${idx}`}
+                                                            onClick={() => setSelectedProject(index)}
                                                         />
                                                     </div>
-                                                    <FullscreenIcon className="absolute left-2 bottom-2 w-8 h-8 text-accent hover:scale-125 hover:text-accent/50 hover:cursor-pointer transition-all" onClick={() => setSelectedProject(index)} />
+                                                    {/* <FullscreenIcon className="absolute left-2 bottom-2 w-8 h-8 text-accent hover:scale-125 hover:text-accent/50 hover:cursor-pointer transition-all" onClick={() => setSelectedProject(index)} /> */}
                                                 </div>
                                             </SwiperSlide>
                                         );

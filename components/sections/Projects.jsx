@@ -34,11 +34,11 @@ const projects = [
             "Python", "Django", "HTML5", "CSS3", "Jquery", "JavaScript" , "PostgresSQL", "Redis", "Docker"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
-            "/assets/work/Attalos/homepage.png",
-            "/assets/work/Attalos/dashboard.png",
-            "/assets/work/Attalos/order-lines.png",
-            "/assets/work/Attalos/edit-view.png",
-            "/assets/work/Attalos/settings.png",
+            "/assets/projects/Attalos/homepage.png",
+            "/assets/projects/Attalos/dashboard.png",
+            "/assets/projects/Attalos/order-lines.png",
+            "/assets/projects/Attalos/edit-view.png",
+            "/assets/projects/Attalos/settings.png",
         ],
         live: "https://attalos.io",
         github: ""
@@ -52,13 +52,13 @@ const projects = [
             "React", "Tailwind CSS", "Python", "Django", "PostgresSQL", "AWS", "Docker", "OpenAI API", "Twitter API", "Redis"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
-            "/assets/work/Socialaize/Homepage.png",
-            "/assets/work/Socialaize/Why.png",
-            "/assets/work/Socialaize/SigninSignup.png",
-            "/assets/work/Socialaize/Profile.png",
-            "/assets/work/Socialaize/Dashboard.png",
-            "/assets/work/Socialaize/ApprovedPosts.png",
-            "/assets/work/Socialaize/SchedulePost.png",
+            "/assets/projects/Socialaize/Homepage.png",
+            "/assets/projects/Socialaize/Why.png",
+            "/assets/projects/Socialaize/SigninSignup.png",
+            "/assets/projects/Socialaize/Profile.png",
+            "/assets/projects/Socialaize/Dashboard.png",
+            "/assets/projects/Socialaize/ApprovedPosts.png",
+            "/assets/projects/Socialaize/SchedulePost.png",
         ],
         live: "",
         github: ""
@@ -72,12 +72,12 @@ const projects = [
             "React", "Tailwind CSS", "Next.js", "OpenAI API", "PostgresSQL", "Stripe", "Clerk", "Prisma", "Pinecone"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
-            "/assets/work/InboXpert/homepage.png",
-            "/assets/work/InboXpert/signin.png",
-            "/assets/work/InboXpert/dashboard.webp",
-            "/assets/work/InboXpert/compose-email.png",
-            "/assets/work/InboXpert/ai-compose.png",
-            "/assets/work/InboXpert/subscription.png",
+            "/assets/projects/InboXpert/homepage.png",
+            "/assets/projects/InboXpert/signin.png",
+            "/assets/projects/InboXpert/dashboard.webp",
+            "/assets/projects/InboXpert/compose-email.png",
+            "/assets/projects/InboXpert/ai-compose.png",
+            "/assets/projects/InboXpert/subscription.png",
         ],
         live: "",
         github: "https://github.com/amha-kindu/InboXpert"
@@ -91,10 +91,10 @@ const projects = [
             "Python", "PyTorch", "GoogleColab", "NLTK", "FastAPI", "Docker", "Swagger"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
-            "/assets/work/Terguami/Example-1.png",
-            "/assets/work/Terguami/Example-2.png",
-            "/assets/work/Terguami/Example-3.png",
-            "/assets/work/Terguami/Example-4.png",
+            "/assets/projects/Terguami/Example-1.png",
+            "/assets/projects/Terguami/Example-2.png",
+            "/assets/projects/Terguami/Example-3.png",
+            "/assets/projects/Terguami/Example-4.png",
         ],
         live: "",
         github: "https://github.com/amha-kindu/terguami"
@@ -108,14 +108,14 @@ const projects = [
             "CSharp", "NET", "NET CORE", "SignalR", "Mapbox", "PostgresSQL", "Docker", "Swagger"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
-            "/assets/work/Rideshare/Homepage.png",
-            "/assets/work/Rideshare/About.png",
-            "/assets/work/Rideshare/HowItWorks.png",
-            "/assets/work/Rideshare/API.png",
-            "/assets/work/Rideshare/API-2.png",
-            "/assets/work/Rideshare/API-3.png",
-            "/assets/work/Rideshare/API-4.png",
-            "/assets/work/Rideshare/API-5.png",
+            "/assets/projects/Rideshare/Homepage.png",
+            "/assets/projects/Rideshare/About.png",
+            "/assets/projects/Rideshare/HowItWorks.png",
+            "/assets/projects/Rideshare/API.png",
+            "/assets/projects/Rideshare/API-2.png",
+            "/assets/projects/Rideshare/API-3.png",
+            "/assets/projects/Rideshare/API-4.png",
+            "/assets/projects/Rideshare/API-5.png",
         ],
         live: "https://rideshare-swdm.onrender.com/swagger/index.html",
         github: "https://github.com/amhakindu/Rideshare"
@@ -129,12 +129,12 @@ const projects = [
             "CSharp", "NET", "NET CORE", "SignalR", "PostgresSQL", "AWS", "Docker", "Swagger", "OpenAI API", "Ethereum", "Solidity"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
-            "/assets/work/NFT-Gebeya/Homepage.png",
-            "/assets/work/NFT-Gebeya/HowItWorks.png",
-            "/assets/work/NFT-Gebeya/TopCreators.png",
-            "/assets/work/NFT-Gebeya/UserProfile.png",
-            "/assets/work/NFT-Gebeya/Auction.png",
-            "/assets/work/NFT-Gebeya/MintNFT.png",
+            "/assets/projects/NFT-Gebeya/Homepage.png",
+            "/assets/projects/NFT-Gebeya/HowItWorks.png",
+            "/assets/projects/NFT-Gebeya/TopCreators.png",
+            "/assets/projects/NFT-Gebeya/UserProfile.png",
+            "/assets/projects/NFT-Gebeya/Auction.png",
+            "/assets/projects/NFT-Gebeya/MintNFT.png",
         ],
         live: "https://nft-marketplace-rose-zeta.vercel.app/",
         github: "https://github.com/KaleabKindu/NFT_Marketplace"

@@ -27,8 +27,9 @@ const experience = {
     items: [
         { company: "Freelance(Upwork)", position: "Freelance Web Developer", duration: "Jan 2020 - Present" },
         { company: "John Galt Solutions", position: "Junior AI/ML Software Engineer", duration: "April 2024 - Oct 2024" },
-        { company: "Nexushub(Startup)", position: "Senior Python Developer", duration: "Feb 2024 - May 2024" },
-        { company: "Eskalate Africa Software Development S.C", position: "Web Development Intern", duration: "April 2022 - Jun 2022" },
+        { company: "Attalos", position: "Django Developer", duration: "Nov 2022 - Oct 2023" },
+        { company: "Nexushub(Startup)", position: "Python Developer", duration: "Jun 2020 - Sep 2022" },
+        { company: "Eskalate Africa Software Development S.C", position: "Web Development Intern", duration: "April 2019 - Jun 2019" },
     ]
 }
 

@@ -27,8 +27,27 @@ import { FullscreenIcon } from "lucide-react";
 const projects = [
     {
         num: "01",
+        title: "Attalos",
+        subtitle: "Real-Time Profitability Monitoring Platform",
+        description: "Attalos is a SaaS solution designed to help businesses track and optimize their profitability across various marketplaces. By providing real-time insights at the order-line level, it accounts for all relevant costs—including buy prices, pick & pack, advertising, and integrator fees.",
+        stack: [
+            "Python", "Django", "HTML5", "CSS3", "Jquery", "JavaScript" , "PostgresSQL", "Redis", "Docker"
+        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
+        images: [
+            "/assets/work/Attalos/homepage.png",
+            "/assets/work/Attalos/dashboard.png",
+            "/assets/work/Attalos/order-lines.png",
+            "/assets/work/Attalos/edit-view.png",
+            "/assets/work/Attalos/settings.png",
+        ],
+        live: "https://attalos.io",
+        github: ""
+    },
+    {
+        num: "02",
         title: "Socialaize",
-        description: "Socialaize is a social media management system that helps users to manage and schedule their posts on various social media platforms, including Twitter, LinkedIn, and other. Additionally, it offers features such as commenting, replying to comments, and post recommendations for different social media platforms.",
+        subtitle: "Social Media Management Platform",
+        description: "Socialaize is a platform that helps users to manage and schedule their posts on various social media platforms, including Twitter, LinkedIn, and other. Additionally, it offers features such as commenting, replying to comments, and post recommendations for different social media platforms.",
         stack: [
             "React", "Tailwind CSS", "Python", "Django", "PostgresSQL", "AWS", "Docker", "OpenAI API", "Twitter API", "Redis"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
@@ -45,8 +64,9 @@ const projects = [
         github: ""
     },
     {
-        num: "02",
+        num: "03",
         title: "InboXpert",
+        subtitle: "AI-Powered Email Client",
         description: "InboXpert is a cutting-edge, AI-enhanced email client built to streamline communication and optimize inbox management. It integrates OpenAI’s API to offer AI-driven functionalities such as predictive sorting, smart categorization, and automated responses.",
         stack: [
             "React", "Tailwind CSS", "Next.js", "OpenAI API", "PostgresSQL", "Stripe", "Clerk", "Prisma", "Pinecone"
@@ -63,8 +83,9 @@ const projects = [
         github: "https://github.com/amha-kindu/InboXpert"
     },
     {
-        num: "03",
+        num: "04",
         title: "Terguami",
+        subtitle: "English-to-Amharic Machine Translation API",
         description: "Terguami is a FastAPI application powered by a custom transformer model built with PyTorch. It provides fast and accurate English-to-Amharic translations, with features like Docker support and interactive OpenAPI documentation, making it a scalable and easy-to-deploy solution for machine translation.",
         stack: [
             "Python", "PyTorch", "GoogleColab", "NLTK", "FastAPI", "Docker", "Swagger"
@@ -79,8 +100,9 @@ const projects = [
         github: "https://github.com/amha-kindu/terguami"
     },
     {
-        num: "04",
+        num: "05",
         title: "Rideshare",
+        subtitle: "",
         description: "Rideshare is a mobile-based platform enabling users to book, share, and manage rides collaboratively. Key features include a dynamic ride-booking system, real-time ride notifications, and comprehensive user profile management, all backed by secure, scalable backend architecture. The platform integrates advanced scheduling algorithms to match riders efficiently, optimizes route sharing.",
         stack: [
             "CSharp", "NET", "NET CORE", "SignalR", "Mapbox", "PostgresSQL", "Docker", "Swagger"
@@ -99,8 +121,9 @@ const projects = [
         github: "https://github.com/amhakindu/Rideshare"
     },
     {
-        num: "05",
+        num: "06",
         title: "NFT-Gebeya",
+        subtitle: "Marketplace for Digital Products as NFTs",
         description: "NFT-Gebeya is  a robust online platform that facilitates the trading and showcasing of digital products as NFTs. The platform will support a wide range of digital assets, including artwork, photography, ebooks, collectibles, audio and video.",
         stack: [
             "CSharp", "NET", "NET CORE", "SignalR", "PostgresSQL", "AWS", "Docker", "Swagger", "OpenAI API", "Ethereum", "Solidity"
@@ -139,14 +162,17 @@ const Projects = () => {
             <h1 className="h1 w-full text-center mb-8 text-accent">Projects</h1>
             <div className="container mx-auto flex flex-col gap-8">
                 {projects.map((project, index) => (
-                    <div key={index} className="flex flex-col xl:flex-row xl:gap-[30px] border-b-2 border-white/10">
+                    <div key={index} className="flex flex-col xl:flex-row xl:gap-[30px] py-4 xl:py-10 border-b-2 border-white/10">
                         <div className="w-full xl:w-[50%] flex flex-col xl:justify-between order-2 xl:order-none">
                             <div className="flex flex-col gap-[30px]">
                                 <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                                     {project.num}
                                 </div>
                                 <div className="flex justify-between">
-                                    <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.title}</h2>
+                                    <div className="flex flex-col justify-center items-start gap-2">
+                                        <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.title}</h2>
+                                        <p className="text-xl text-white/60">{project.subtitle}</p>
+                                    </div>
                                     <div className="flex items-center gap-4">
                                         <Link href={project.live} target="_blank">
                                             <TooltipProvider delayDuration={100}>

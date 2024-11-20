@@ -31,7 +31,7 @@ const projects = [
         subtitle: "Real-Time Profitability Monitoring Platform",
         description: "Attalos is a SaaS solution designed to help businesses track and optimize their profitability across various marketplaces. By providing real-time insights at the order-line level, it accounts for all relevant costs—including buy prices, pick & pack, advertising, and integrator fees.",
         stack: [
-            "Python", "Django", "HTML5", "CSS3", "Jquery", "JavaScript" , "PostgresSQL", "Redis", "Docker"
+            "Python", "Django", "HTML5", "CSS3", "Jquery", "JavaScript", "PostgresSQL", "Redis", "Docker"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
             "/assets/projects/Attalos/homepage.png",
@@ -65,25 +65,6 @@ const projects = [
     },
     {
         num: "03",
-        title: "InboXpert",
-        subtitle: "AI-Powered Email Client",
-        description: "InboXpert is a cutting-edge, AI-enhanced email client built to streamline communication and optimize inbox management. It integrates OpenAI’s API to offer AI-driven functionalities such as predictive sorting, smart categorization, and automated responses.",
-        stack: [
-            "React", "Tailwind CSS", "Next.js", "OpenAI API", "PostgresSQL", "Stripe", "Clerk", "Prisma", "Pinecone"
-        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
-        images: [
-            "/assets/projects/InboXpert/homepage.png",
-            "/assets/projects/InboXpert/signin.png",
-            "/assets/projects/InboXpert/dashboard.webp",
-            "/assets/projects/InboXpert/compose-email.png",
-            "/assets/projects/InboXpert/ai-compose.png",
-            "/assets/projects/InboXpert/subscription.png",
-        ],
-        live: "",
-        github: "https://github.com/amha-kindu/InboXpert"
-    },
-    {
-        num: "04",
         title: "Terguami",
         subtitle: "English-to-Amharic Machine Translation API",
         description: "Terguami is a FastAPI application powered by a custom transformer model built with PyTorch. It provides fast and accurate English-to-Amharic translations, with features like Docker support and interactive OpenAPI documentation, making it a scalable and easy-to-deploy solution for machine translation.",
@@ -98,6 +79,23 @@ const projects = [
         ],
         live: "",
         github: "https://github.com/amha-kindu/terguami"
+    },
+    {
+        num: "04",
+        title: "GCRS API",
+        subtitle: "Gift Card Redemption System API",
+        description: "GCRS is an integral module within a larger web application, GiftXD. It functions as a RESTful API that enables users to redeem gift cards from providers like Amazon, Google, and Apple. The API also supports account balance inquiries, ensuring seamless integration and efficient management of user transactions.",
+        stack: [
+            "Python", "Flask", "MongoDB", "Docker", "Apache Kafka", "Swagger"
+        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
+        images: [
+            "/assets/projects/GCRS/homepage.png",
+            "/assets/projects/GCRS/accounts.png",
+            "/assets/projects/GCRS/redeem.png",
+            "/assets/projects/GCRS/scripts.png"
+        ],
+        live: "https://www.giftxd.com",
+        github: ""
     },
     {
         num: "05",
@@ -138,7 +136,26 @@ const projects = [
         ],
         live: "https://nft-marketplace-rose-zeta.vercel.app/",
         github: "https://github.com/KaleabKindu/NFT_Marketplace"
-    }
+    },
+    {
+        num: "07",
+        title: "InboXpert",
+        subtitle: "AI-Powered Email Client",
+        description: "InboXpert is a cutting-edge, AI-enhanced email client built to streamline communication and optimize inbox management. It integrates OpenAI’s API to offer AI-driven functionalities such as predictive sorting, smart categorization, and automated responses.",
+        stack: [
+            "React", "Tailwind CSS", "Next.js", "OpenAI API", "PostgresSQL", "Stripe", "Clerk", "Prisma", "Pinecone"
+        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
+        images: [
+            "/assets/projects/InboXpert/homepage.png",
+            "/assets/projects/InboXpert/signin.png",
+            "/assets/projects/InboXpert/dashboard.webp",
+            "/assets/projects/InboXpert/compose-email.png",
+            "/assets/projects/InboXpert/ai-compose.png",
+            "/assets/projects/InboXpert/subscription.png",
+        ],
+        live: "https://inboxpert.vercel.app",
+        github: "https://github.com/amha-kindu/InboXpert"
+    },
 ]
 
 
@@ -174,30 +191,39 @@ const Projects = () => {
                                         <p className="text-xl text-white/60">{project.subtitle}</p>
                                     </div>
                                     <div className="flex items-center gap-4">
-                                        <Link href={project.live} target="_blank">
-                                            <TooltipProvider delayDuration={100}>
-                                                <Tooltip>
-                                                    <TooltipTrigger className="w-[40px] h-[40px] rounded-full bg-white/5 flex justify-center items-center group">
-                                                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                                                    </TooltipTrigger>
-                                                    <TooltipContent>
-                                                        <p>Live demo</p>
-                                                    </TooltipContent>
-                                                </Tooltip>
-                                            </TooltipProvider>
-                                        </Link>
-                                        <Link href={project.github} target="_blank">
-                                            <TooltipProvider delayDuration={100}>
-                                                <Tooltip>
-                                                    <TooltipTrigger className="w-[40px] h-[40px] rounded-full bg-white/5 flex justify-center items-center group">
-                                                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                                                    </TooltipTrigger>
-                                                    <TooltipContent>
-                                                        <p>Github Repository</p>
-                                                    </TooltipContent>
-                                                </Tooltip>
-                                            </TooltipProvider>
-                                        </Link>
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                                <TooltipTrigger className="w-[40px] h-[40px] rounded-full bg-white/5 flex justify-center items-center group">
+                                                    {project.live ?
+                                                        <Link href={project.live} target="_blank">
+                                                            <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                                                        </Link> :
+                                                        <BsArrowUpRight className="text-white text-3xl group-hover:text-red-500" />
+                                                    }
+                                                </TooltipTrigger>
+                                                <TooltipContent className={`${project.live === "" && "bg-red-200"}`}>
+                                                    {project.live ? <p>Live Demo</p> : <p className="text-red-500">Missing</p>
+                                                    }
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                                <TooltipTrigger className="w-[40px] h-[40px] rounded-full bg-white/5 flex justify-center items-center group">
+                                                    {project.github ?
+                                                        <Link href={project.github} target="_blank">
+                                                            <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                                                        </Link> :
+                                                        <BsGithub className="text-white text-3xl group-hover:text-red-500" />
+                                                    }
+                                                </TooltipTrigger>
+
+                                                <TooltipContent className={`${project.github === "" && "bg-red-200"}`}>
+                                                    {project.github ? <p>Github Repo</p> : <p className="text-red-500">Private Repo</p>
+                                                    }
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
                                     </div>
                                 </div>
                                 <p className="text-white/60">{project.description}</p>

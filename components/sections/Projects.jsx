@@ -27,6 +27,21 @@ import { FullscreenIcon } from "lucide-react";
 const projects = [
     {
         num: "01",
+        title: "PartCAD",
+        subtitle: "Modeling Framework and Package Manager for CAD models",
+        description: "PartCAD is the first package manager for CAD models and a framework for managing assemblies. It aims to complement Git with everything necessary to substitute commercial Product Lifecycle Management (PLM) tools. PartCAD maintains information about mechanical parts and how they come together to form larger assemblies. The same parts are reused in multiple assemblies and multiple projects. And all of that is supercharged by the ultimate versioning and collaboration features of Git.",
+        stack: [
+            "Python", "Docker", "Ollama", "OpenAI", "Gemini", "Github Actions"
+        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
+        images: [
+            "/assets/projects/PartCAD/partcad.png",
+            "/assets/projects/PartCAD/partcad-2.png",
+        ],
+        live: "https://pypi.org/project/partcad",
+        github: "https://github.com/partcad/partcad"
+    },
+    {
+        num: "02",
         title: "Attalos",
         subtitle: "Real-Time Profitability Monitoring Platform",
         description: "Attalos is a SaaS solution designed to help businesses track and optimize their profitability across various marketplaces. By providing real-time insights at the order-line level, it accounts for all relevant costs—including buy prices, pick & pack, advertising, and integrator fees.",
@@ -44,13 +59,13 @@ const projects = [
         github: ""
     },
     {
-        num: "02",
+        num: "03",
         title: "Socialaize",
         subtitle: "Social Media Management Platform",
         description: "Socialaize is a platform that helps users to manage and schedule their posts on various social media platforms, including Twitter, LinkedIn, and other. Additionally, it offers features such as commenting, replying to comments, and post recommendations for different social media platforms.",
         stack: [
-            "React", "Tailwind CSS", "Python", "Django", "PostgresSQL", "AWS", "Docker", "OpenAI API", "Twitter API", "Redis"
-        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
+            "React", "Tailwind CSS", "Python", "Django", "PostgresSQL", "AWS", "Docker", "OpenAI", "X", "Redis"
+        ].map((item, index) => (<TechStack key={index} size={40} name={item} icon_type={item === "X" ? "png" : undefined} />)),
         images: [
             "/assets/projects/Socialaize/Homepage.png",
             "/assets/projects/Socialaize/Why.png",
@@ -64,7 +79,7 @@ const projects = [
         github: ""
     },
     {
-        num: "03",
+        num: "04",
         title: "Terguami",
         subtitle: "English-to-Amharic Machine Translation API",
         description: "Terguami is a FastAPI application powered by a custom transformer model built with PyTorch. It provides fast and accurate English-to-Amharic translations, with features like Docker support and interactive OpenAPI documentation, making it a scalable and easy-to-deploy solution for machine translation.",
@@ -81,7 +96,7 @@ const projects = [
         github: "https://github.com/amha-kindu/terguami"
     },
     {
-        num: "04",
+        num: "05",
         title: "GCRS API",
         subtitle: "Gift Card Redemption System API",
         description: "GCRS is an integral module within a larger web application, GiftXD. It functions as a RESTful API that enables users to redeem gift cards from providers like Amazon, Google, and Apple. The API also supports account balance inquiries, ensuring seamless integration and efficient management of user transactions.",
@@ -98,7 +113,7 @@ const projects = [
         github: ""
     },
     {
-        num: "05",
+        num: "06",
         title: "Rideshare",
         subtitle: "",
         description: "Rideshare is a mobile-based platform enabling users to book, share, and manage rides collaboratively. Key features include a dynamic ride-booking system, real-time ride notifications, and comprehensive user profile management, all backed by secure, scalable backend architecture. The platform integrates advanced scheduling algorithms to match riders efficiently, optimizes route sharing.",
@@ -119,12 +134,12 @@ const projects = [
         github: "https://github.com/amhakindu/Rideshare"
     },
     {
-        num: "06",
+        num: "07",
         title: "NFT-Gebeya",
         subtitle: "Marketplace for Digital Products as NFTs",
         description: "NFT-Gebeya is  a robust online platform that facilitates the trading and showcasing of digital products as NFTs. The platform will support a wide range of digital assets, including artwork, photography, ebooks, collectibles, audio and video.",
         stack: [
-            "CSharp", "NET", "NET CORE", "SignalR", "PostgresSQL", "AWS", "Docker", "Swagger", "OpenAI API", "Ethereum", "Solidity"
+            "CSharp", "NET", "NET CORE", "SignalR", "PostgresSQL", "AWS", "Docker", "Swagger", "OpenAI", "Ethereum", "Solidity"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
             "/assets/projects/NFT-Gebeya/Homepage.png",
@@ -138,12 +153,12 @@ const projects = [
         github: "https://github.com/KaleabKindu/NFT_Marketplace"
     },
     {
-        num: "07",
+        num: "08",
         title: "InboXpert",
         subtitle: "AI-Powered Email Client",
         description: "InboXpert is a cutting-edge, AI-enhanced email client built to streamline communication and optimize inbox management. It integrates OpenAI’s API to offer AI-driven functionalities such as predictive sorting, smart categorization, and automated responses.",
         stack: [
-            "React", "Tailwind CSS", "Next.js", "OpenAI API", "PostgresSQL", "Stripe", "Clerk", "Prisma", "Pinecone"
+            "React", "Tailwind CSS", "Next.js", "OpenAI", "PostgresSQL", "Stripe", "Clerk", "Prisma", "Pinecone"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
             "/assets/projects/InboXpert/homepage.png",

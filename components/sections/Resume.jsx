@@ -25,6 +25,7 @@ const experience = {
     title: "My Experience",
     description: "With a blend of freelance projects on Upwork and industry roles both in-person & remote, I've built skills in web development and machine learning, delivering effective software solutions and gaining hands-on experience with advanced technologies.",
     items: [
+        { company: "PartCAD", position: "Python Developer & DevOps", duration: "Jan 2024 - Present" },
         { company: "Freelance(Upwork)", position: "Freelance Web Developer", duration: "Jan 2020 - Present" },
         { company: "John Galt Solutions", position: "Junior AI/ML Software Engineer", duration: "April 2024 - Oct 2024" },
         { company: "Attalos Agency", position: "Django Developer", duration: "Nov 2022 - Oct 2023" },
@@ -70,10 +71,11 @@ const techStacks = [
     { name: "PyTorch", src: "/assets/skills/icons/PyTorch.svg" },
     { name: "NGINX", src: "/assets/skills/icons/NGINX.svg" },
     { name: "Docker", src: "/assets/skills/icons/Docker.svg" },
+    { name: "Github Actions", src: "/assets/skills/icons/Github Actions.svg" },
     { name: "AWS", src: "/assets/skills/icons/AWS.svg" },
     { name: "Git", src: "/assets/skills/icons/Git.svg" },
     { name: "Swagger", src: "/assets/skills/icons/Swagger.svg" },
-    { name: "OpenAI API", src: "/assets/skills/icons/OpenAI API.svg" },
+    { name: "OpenAI", src: "/assets/skills/icons/OpenAI.svg" },
     { name: "Stripe", src: "/assets/skills/icons/Stripe.svg" },
     { name: "Clerk", src: "/assets/skills/icons/Clerk.svg" },
 ]

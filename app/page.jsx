@@ -11,9 +11,6 @@ const Home = () => {
             {/* Hero Section */}
             <HeroSection/>
 
-            {/* Services Section */}
-            <Services/>
-
             {/* Resume Section */}
             <Resume/>
 

@@ -26,10 +26,9 @@ const experience = {
     description: "With a blend of freelance projects on Upwork and industry roles both in-person & remote, I've built skills in web development and machine learning, delivering effective software solutions and gaining hands-on experience with advanced technologies.",
     items: [
         { company: "PartCAD", position: "Python Developer & DevOps", duration: "Jan 2024 - Present" },
-        { company: "Freelance(Upwork)", position: "Freelance Web Developer", duration: "Jan 2020 - Present" },
         { company: "John Galt Solutions", position: "Junior AI/ML Software Engineer", duration: "April 2024 - Oct 2024" },
-        { company: "Attalos Agency", position: "Django Developer", duration: "Nov 2022 - Oct 2023" },
-        { company: "Nexushub(Startup)", position: "Python Developer", duration: "Jun 2020 - Sep 2022" },
+        { company: "Attalos", position: "Django Developer", duration: "Nov 2022 - Oct 2023" },
+        { company: "Nexus Technology", position: "Python Developer", duration: "Jun 2020 - Sep 2022" },
         { company: "Eskalate Africa Software Development S.C", position: "Web Development Intern", duration: "April 2019 - Jun 2019" },
     ]
 }

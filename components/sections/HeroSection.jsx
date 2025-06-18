@@ -1,14 +1,13 @@
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
-import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi"
 
 const HeroSection = () => {
     return (
-        <section id="hero-section" className="h-full w-full mt-24 mb-8">
+        <section id="hero-section" className="h-full w-full mt-24">
             <div className="container mx-auto">
-                <div className="flex flex-col gap-2 xl:gap-32 xl:flex-row  items-center sm:justify-start justify-between xl:pt-8 xl:pb-24">
+                <div className="flex flex-col gap-2 xl:gap-32 xl:flex-row  items-center sm:justify-start justify-between xl:pt-8 xl:pb-16">
                     {/* text */}
                     <div className="text-center xl:text-left order-2 xl:order-none flex flex-col gap-2">
                         <span className="text-xl">Senior Web Developer</span>
@@ -47,7 +46,6 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <Stats />
         </section>
     )
 }

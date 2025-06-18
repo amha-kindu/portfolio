@@ -4,10 +4,6 @@ export const links = [
         path: "/#hero-section"
     },
     {
-        name: "services",
-        path: "/#services"
-    },
-    {
         name: "resume",
         path: "/#resume"
     },

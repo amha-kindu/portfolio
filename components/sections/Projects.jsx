@@ -21,7 +21,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import { FullscreenIcon } from "lucide-react";
 
 
 const projects = [
@@ -203,7 +202,7 @@ const Projects = () => {
                                 <div className="flex justify-between">
                                     <div className="flex flex-col justify-center items-start gap-2">
                                         <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.title}</h2>
-                                        <p className="text-xl text-white/60">{project.subtitle}</p>
+                                        <p className="text-lg text-white/90 max-w-96">{project.subtitle}</p>
                                     </div>
                                     <div className="flex items-center gap-4">
                                         <TooltipProvider delayDuration={100}>
@@ -242,7 +241,7 @@ const Projects = () => {
                                     </div>
                                 </div>
                                 <p className="text-white/60">{project.description}</p>
-                                <ul className="flex flex-wrap gap-4 overflow-y-auto">
+                                <ul className="flex flex-wrap items-center gap-4 overflow-y-auto">
                                     {project.stack.map((item, index) => {
                                         return (
                                             <li

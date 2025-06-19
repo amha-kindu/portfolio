@@ -79,6 +79,27 @@ const projects = [
     },
     {
         num: "04",
+        title: "GiftXD",
+        subtitle: "Instant Gift Card Cashout Platform",
+        description: "GiftXD is a secure, scalable platform that lets users convert gift cards into cash within minutes. It features a smooth multi-step onboarding flow, real-time offer generation powered by smart matching algorithms, and robust identity verification to ensure safe transactions. Built with a modern backend stack and asynchronous workflows using ApacheKafka, the system supports high-throughput card intake, automated fraud checks, and seamless payout processing via user-friendly dashboards.",
+        stack: [
+            "Nest.js", "Python", "Flask", "MongoDB", "Docker", "Apache Kafka", "AWS", "Swagger"
+        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
+        images: [
+            "/assets/projects/GiftXD/landingpage.png",
+            "/assets/projects/GiftXD/homepage.png",
+            "/assets/projects/GiftXD/how-it-works.png",
+            "/assets/projects/GiftXD/sell.png",
+            "/assets/projects/GiftXD/wallet.png",
+            "/assets/projects/GiftXD/signup.png",
+            "/assets/projects/GiftXD/login.png",
+            "/assets/projects/GiftXD/become-a-vendor.png",
+        ],
+        live: "https://staging.giftxd.com",
+        github: ""
+    },
+    {
+        num: "05",
         title: "Terguami",
         subtitle: "English-to-Amharic Machine Translation API",
         description: "Terguami is a FastAPI application powered by a custom transformer model built with PyTorch. It provides fast and accurate English-to-Amharic translations, with features like Docker support and interactive OpenAPI documentation, making it a scalable and easy-to-deploy solution for machine translation.",
@@ -94,23 +115,7 @@ const projects = [
         live: "",
         github: "https://github.com/amha-kindu/terguami"
     },
-    {
-        num: "05",
-        title: "GCRS API",
-        subtitle: "Gift Card Redemption System API",
-        description: "GCRS is an integral module within a larger web application, GiftXD. It functions as a RESTful API that enables users to redeem gift cards from providers like Amazon, Google, and Apple. The API also supports account balance inquiries, ensuring seamless integration and efficient management of user transactions.",
-        stack: [
-            "Python", "Flask", "MongoDB", "Docker", "Apache Kafka", "Swagger"
-        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
-        images: [
-            "/assets/projects/GCRS/homepage.png",
-            "/assets/projects/GCRS/accounts.png",
-            "/assets/projects/GCRS/redeem.png",
-            "/assets/projects/GCRS/scripts.png"
-        ],
-        live: "https://www.giftxd.com",
-        github: ""
-    },
+
     {
         num: "06",
         title: "Rideshare",

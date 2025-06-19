@@ -3,7 +3,7 @@ import {
     Tooltip, TooltipContent, TooltipProvider, TooltipTrigger
   } from "@/components/ui/tooltip";
 
-export const TechStack = ({ size, name, location = "/assets/skills/icons", icon_type = "svg" }) => {
+export const TechStack = ({ size, name, location = "/assets/techstacks", icon_type = "svg" }) => {
     return (
         <TooltipProvider delayDuration={100}>
             <Tooltip>

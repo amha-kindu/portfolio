@@ -59,6 +59,29 @@ const projects = [
     },
     {
         num: "03",
+        title: "TranscriptMojo",
+        subtitle: "Automated CPA Transcript Evaluation & Credit Gap Analysis",
+        description:
+            "TranscriptMojo is a smart web-based tool that helps aspiring CPAs determine whether their academic transcripts meet state board licensure requirements. Users can upload PDF or Excel transcripts, and the system—powered by LLMs and classification algorithms—automatically maps each course to the appropriate credit category (Accounting, Ethics, Business, etc.). The platform then highlights unmet credit areas and suggests targeted coursework.",
+        stack: [
+            "Django", "Django REST", "React", "Tailwind CSS", "Shadcnui", "Docker", "PostgresSQL", "NLTK", "Groq", "AWS", "Swagger"
+        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
+        images: [
+            "/assets/projects/TranscriptMojo/homepage.png",
+            "/assets/projects/TranscriptMojo/how-it-works.png",
+            "/assets/projects/TranscriptMojo/upload-transcript.png",
+            "/assets/projects/TranscriptMojo/data-validation.png",
+            "/assets/projects/TranscriptMojo/data-validation-pop-up.png",
+            "/assets/projects/TranscriptMojo/classification-review.png",
+            "/assets/projects/TranscriptMojo/classification-review-2.png",
+            "/assets/projects/TranscriptMojo/move-to-another-bucket.png",
+            "/assets/projects/TranscriptMojo/result-summary.png",
+        ],
+        live: "https://transcriptmojo.com",
+        github: ""
+    },    
+    {
+        num: "04",
         title: "Socialaize",
         subtitle: "Social Media Management Platform",
         description: "Socialaize is a platform that helps users to manage and schedule their posts on various social media platforms, including Twitter, LinkedIn, and other. Additionally, it offers features such as commenting, replying to comments, and post recommendations for different social media platforms.",
@@ -78,7 +101,7 @@ const projects = [
         github: ""
     },
     {
-        num: "04",
+        num: "05",
         title: "GiftXD",
         subtitle: "Instant Gift Card Cashout Platform",
         description: "GiftXD is a secure, scalable platform that lets users convert gift cards into cash within minutes. It features a smooth multi-step onboarding flow, real-time offer generation powered by smart matching algorithms, and robust identity verification to ensure safe transactions. Built with a modern backend stack and asynchronous workflows using ApacheKafka, the system supports high-throughput card intake, automated fraud checks, and seamless payout processing via user-friendly dashboards.",
@@ -99,25 +122,24 @@ const projects = [
         github: ""
     },
     {
-        num: "05",
-        title: "Terguami",
-        subtitle: "English-to-Amharic Machine Translation API",
-        description: "Terguami is a FastAPI application powered by a custom transformer model built with PyTorch. It provides fast and accurate English-to-Amharic translations, with features like Docker support and interactive OpenAPI documentation, making it a scalable and easy-to-deploy solution for machine translation.",
+        num: "06",
+        title: "LissanX",
+        subtitle: "English-to-Amharic Translating Model",
+        description: "A custom Transformer-based neural machine translation model for English to Amharic translation, implemented from scratch in PyTorch and deployed with Gradio for interactive use.",
         stack: [
-            "Python", "PyTorch", "GoogleColab", "NLTK", "FastAPI", "Docker", "Swagger"
+            "Python", "PyTorch", "GoogleColab", "NLTK", "HuggingFace", "Gradio"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
-            "/assets/projects/Terguami/Example-1.png",
-            "/assets/projects/Terguami/Example-2.png",
-            "/assets/projects/Terguami/Example-3.png",
-            "/assets/projects/Terguami/Example-4.png",
+            "/assets/projects/LissanX/Example-1.png",
+            "/assets/projects/LissanX/Example-2.png",
+            "/assets/projects/LissanX/Example-3.png",
+            "/assets/projects/LissanX/Example-4.png",
         ],
-        live: "",
-        github: "https://github.com/amha-kindu/terguami"
+        live: "https://huggingface.co/spaces/amha-kindu/LissanX",
+        github: "https://huggingface.co/spaces/amha-kindu/LissanX/tree/main"
     },
-
     {
-        num: "06",
+        num: "07",
         title: "Rideshare",
         subtitle: "",
         description: "Rideshare is a mobile-based platform enabling users to book, share, and manage rides collaboratively. Key features include a dynamic ride-booking system, real-time ride notifications, and comprehensive user profile management, all backed by secure, scalable backend architecture. The platform integrates advanced scheduling algorithms to match riders efficiently, optimizes route sharing.",
@@ -138,7 +160,7 @@ const projects = [
         github: "https://github.com/amhakindu/Rideshare"
     },
     {
-        num: "07",
+        num: "08",
         title: "NFT-Gebeya",
         subtitle: "Marketplace for Digital Products as NFTs",
         description: "NFT-Gebeya is  a robust online platform that facilitates the trading and showcasing of digital products as NFTs. The platform will support a wide range of digital assets, including artwork, photography, ebooks, collectibles, audio and video.",
@@ -157,7 +179,7 @@ const projects = [
         github: "https://github.com/KaleabKindu/NFT_Marketplace"
     },
     {
-        num: "08",
+        num: "09",
         title: "InboXpert",
         subtitle: "AI-Powered Email Client",
         description: "InboXpert is a cutting-edge, AI-enhanced email client built to streamline communication and optimize inbox management. It integrates OpenAI’s API to offer AI-driven functionalities such as predictive sorting, smart categorization, and automated responses.",
@@ -245,7 +267,7 @@ const Projects = () => {
                                         </TooltipProvider>
                                     </div>
                                 </div>
-                                <p className="text-white/60">{project.description}</p>
+                                <p className="text-white/60 text-sm leading-7 tracking-wider">{project.description}</p>
                                 <ul className="flex flex-wrap items-center gap-4 overflow-y-auto">
                                     {project.stack.map((item, index) => {
                                         return (

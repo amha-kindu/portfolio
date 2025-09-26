@@ -41,21 +41,17 @@ const projects = [
     },
     {
         num: "02",
-        title: "Attalos",
-        subtitle: "Real-Time Profitability Monitoring Platform",
-        description: "Attalos is a SaaS solution designed to help businesses track and optimize their profitability across various marketplaces. By providing real-time insights at the order-line level, it accounts for all relevant costs—including buy prices, pick & pack, advertising, and integrator fees.",
+        title: "Amharic GPT",
+        subtitle: "GPT-style Language Model Training Pipeline",
+        description: "This project provides the full training and fine-tuning pipeline for a custom GPT-style language model specialized for the Amharic language. Unlike most multilingual models where Amharic is a low-resource side case, this model is trained from scratch on 12+ GB of Amharic text and further adapted on smaller supervised datasets for task-specific improvements (dialogue, summarization, classification).",
         stack: [
-            "Python", "Django", "HTML5", "CSS3", "Jquery", "JavaScript", "PostgresSQL", "Redis", "Docker"
+            "Python", "PyTorch"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
-            "/assets/projects/Attalos/homepage.png",
-            "/assets/projects/Attalos/dashboard.png",
-            "/assets/projects/Attalos/order-lines.png",
-            "/assets/projects/Attalos/edit-view.png",
-            "/assets/projects/Attalos/settings.png",
+            "/assets/projects/AmharicGPT/training-curves.png",
         ],
-        live: "https://attalos.io",
-        github: ""
+        live: "",
+        github: "https://github.com/amha-kindu/amharic-gpt"
     },
     {
         num: "03",
@@ -79,9 +75,27 @@ const projects = [
         ],
         live: "https://transcriptmojo.com",
         github: ""
-    },    
+    },
     {
         num: "04",
+        title: "Attalos",
+        subtitle: "Real-Time Profitability Monitoring Platform",
+        description: "Attalos is a SaaS solution designed to help businesses track and optimize their profitability across various marketplaces. By providing real-time insights at the order-line level, it accounts for all relevant costs—including buy prices, pick & pack, advertising, and integrator fees.",
+        stack: [
+            "Python", "Django", "HTML5", "CSS3", "Jquery", "JavaScript", "PostgresSQL", "Redis", "Docker"
+        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
+        images: [
+            "/assets/projects/Attalos/homepage.png",
+            "/assets/projects/Attalos/dashboard.png",
+            "/assets/projects/Attalos/order-lines.png",
+            "/assets/projects/Attalos/edit-view.png",
+            "/assets/projects/Attalos/settings.png",
+        ],
+        live: "https://attalos.io",
+        github: ""
+    },
+    {
+        num: "05",
         title: "Socialaize",
         subtitle: "Social Media Management Platform",
         description: "Socialaize is a platform that helps users to manage and schedule their posts on various social media platforms, including Twitter, LinkedIn, and other. Additionally, it offers features such as commenting, replying to comments, and post recommendations for different social media platforms.",
@@ -101,7 +115,7 @@ const projects = [
         github: ""
     },
     {
-        num: "05",
+        num: "06",
         title: "GiftXD",
         subtitle: "Instant Gift Card Cashout Platform",
         description: "GiftXD is a secure, scalable platform that lets users convert gift cards into cash within minutes. It features a smooth multi-step onboarding flow, real-time offer generation powered by smart matching algorithms, and robust identity verification to ensure safe transactions. Built with a modern backend stack and asynchronous workflows using ApacheKafka, the system supports high-throughput card intake, automated fraud checks, and seamless payout processing via user-friendly dashboards.",
@@ -122,7 +136,7 @@ const projects = [
         github: ""
     },
     {
-        num: "06",
+        num: "07",
         title: "LissanX",
         subtitle: "English-to-Amharic Translating Model",
         description: "A custom Transformer-based neural machine translation model for English to Amharic translation, implemented from scratch in PyTorch and deployed with Gradio for interactive use.",
@@ -139,7 +153,7 @@ const projects = [
         github: "https://huggingface.co/spaces/amha-kindu/LissanX/tree/main"
     },
     {
-        num: "07",
+        num: "08",
         title: "Rideshare",
         subtitle: "",
         description: "Rideshare is a mobile-based platform enabling users to book, share, and manage rides collaboratively. Key features include a dynamic ride-booking system, real-time ride notifications, and comprehensive user profile management, all backed by secure, scalable backend architecture. The platform integrates advanced scheduling algorithms to match riders efficiently, optimizes route sharing.",
@@ -160,7 +174,7 @@ const projects = [
         github: "https://github.com/amhakindu/Rideshare"
     },
     {
-        num: "08",
+        num: "09",
         title: "NFT-Gebeya",
         subtitle: "Marketplace for Digital Products as NFTs",
         description: "NFT-Gebeya is  a robust online platform that facilitates the trading and showcasing of digital products as NFTs. The platform will support a wide range of digital assets, including artwork, photography, ebooks, collectibles, audio and video.",
@@ -179,7 +193,7 @@ const projects = [
         github: "https://github.com/KaleabKindu/NFT_Marketplace"
     },
     {
-        num: "09",
+        num: "10",
         title: "InboXpert",
         subtitle: "AI-Powered Email Client",
         description: "InboXpert is a cutting-edge, AI-enhanced email client built to streamline communication and optimize inbox management. It integrates OpenAI’s API to offer AI-driven functionalities such as predictive sorting, smart categorization, and automated responses.",

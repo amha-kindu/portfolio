@@ -25,11 +25,11 @@ const experience = {
     title: "My Experience",
     description: "With a blend of freelance projects on Upwork and industry roles both in-person & remote, I've built skills in web development and machine learning, delivering effective software solutions and gaining hands-on experience with advanced technologies.",
     items: [
-        { company: "PartCAD", position: "Python Developer & DevOps", duration: "Jan 2024 - Present" },
-        { company: "John Galt Solutions", position: "Junior AI/ML Software Engineer", duration: "April 2024 - Oct 2024" },
+        { company: "PartCAD", position: "Python Developer & DevOps", duration: "Dec 2024 - Present" },
+        { company: "John Galt Solutions", position: "Junior AI/ML Software Engineer", duration: "Oct 2023 - Dec 2024" },
         { company: "Attalos", position: "Django Developer", duration: "Nov 2022 - Oct 2023" },
-        { company: "Nexus Technology", position: "Python Developer", duration: "Jun 2020 - Sep 2022" },
-        { company: "Eskalate Africa Software Development S.C", position: "Web Development Intern", duration: "April 2019 - Jun 2019" },
+        { company: "Nexus Technology", position: "Python Developer", duration: "Mar 2021 - Nov 2022" },
+        { company: "Eskalate Africa Software Development S.C", position: "Web Development Intern", duration: "Feb 2023 - Apr 2023" },
     ]
 }
 
@@ -38,9 +38,8 @@ const education = {
     title: "My Education",
     description: "I have a strong academic foundation in software engineering and have also pursued additional training in competitive programming and full-stack web development. My studies at the Addis Ababa Institute of Technology equipped me with the skills to build innovative software solutions, while my experience with Africa To Silicon Valley further honed my development and problem-solving abilities.",
     items: [
-        { institution: "Addis Ababa Institute of Technology", degree: "B.S in Software Engineering", duration: "2019 - 2024" },
-        { institution: "Africa To Silicon Valley", degree: "Competitive Programming", duration: "2021 - 2022" },
-        { institution: "Africa To Silicon Valley", degree: "Full Stack Web Development Bootcamp", duration: "2021" }
+        { institution: "Addis Ababa Institute of Technology", degree: "B.Sc. in Software Engineering(AI Stream)", duration: "Oct 2019 - Jul 2024" },
+        { institution: "Africa To Silicon Valley", degree: "Competitive Programming", duration: "Dec 2022 - Oct 2023" }
     ]
 }
 

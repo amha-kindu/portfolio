@@ -28,7 +28,7 @@ const experience = {
         { company: "PartCAD", position: "Python Developer & DevOps", duration: "Dec 2024 - Present" },
         { company: "John Galt Solutions", position: "Junior AI/ML Software Engineer", duration: "Oct 2023 - Dec 2024" },
         { company: "Attalos", position: "Django Developer", duration: "Nov 2022 - Oct 2023" },
-        { company: "Nexus Technology", position: "Python Developer", duration: "Mar 2021 - Nov 2022" },
+        { company: "Nexus Technology", position: "Backend Developer", duration: "Mar 2021 - Nov 2022" },
         { company: "Eskalate Africa Software Development S.C", position: "Web Development Intern", duration: "Feb 2023 - Apr 2023" },
     ]
 }

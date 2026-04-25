@@ -10,10 +10,10 @@ const HeroSection = () => {
                 <div className="flex flex-col gap-2 xl:gap-32 xl:flex-row  items-center sm:justify-start justify-between xl:pt-8 xl:pb-16">
                     {/* text */}
                     <div className="text-center xl:text-left order-2 xl:order-none flex flex-col gap-2">
-                        <span className="text-xl">Senior Web Developer</span>
+                        <span className="text-xl">Senior Python & AI Engineer</span>
                         <h1 className="h1">Hello, I'm <br /><span className="text-accent">Amha Kindu</span></h1>
                         <p className="max-w-[500px] mb-9 text-white/80">
-                            I specialize in building dynamic web applications, leveraging a wide range of tech stacks and advanced machine learning tools, including large language models (LLMs), to create interactive and user-friendly apps.
+                            I architect scalable backend systems and production-ready AI solutions. Specializing in the Python ecosystem, I bridge the gap between complex machine learning models and high-performance web applications using FastAPI, Django, and LLM orchestration.
                         </p>
                         {/* button and socials */}
                         <div className="flex flex-col xl:flex-row items-center gap-8">

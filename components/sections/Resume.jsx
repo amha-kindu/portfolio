@@ -8,7 +8,7 @@ import TechStack from "@/components/TechStack";
 
 const about = {
     title: "About me",
-    description: "I'm a web developer with a strong background in Python, full-stack development, and machine learning, with a strong focus on large language models (LLMs) and AI-powered solutions. With over five years of hands-on experience, I’m passionate about building high-performance, scalable web applications and using AI/ML technologies to solve real-world problems.",
+    description: "I am a Senior Full-Stack Python Developer with a passion for building robust engineering solutions that solve real-world problems. With 5 years of professional experience, I have evolved from building core backend services to leading the integration of AI-powered systems into production environments.My expertise lies in high-concurrency Python development, RAG workflows, and optimizing LLM-driven SaaS platforms. I thrive at the intersection of rigorous backend architecture and cutting-edge machine learning.",
     info: [
         { name: "Name", value: "Amha Kindu" },
         { name: "Phone", value: "(+251)978259900" },
@@ -25,7 +25,7 @@ const experience = {
     title: "My Experience",
     description: "With a blend of freelance projects on Upwork and industry roles both in-person & remote, I've built skills in web development and machine learning, delivering effective software solutions and gaining hands-on experience with advanced technologies.",
     items: [
-        { company: "PartCAD", position: "Python Developer & DevOps", duration: "Dec 2024 - Present" },
+        { company: "PartCAD", position: "Python Developer & DevOps", duration: "Dec 2024 - Apr 2026" },
         { company: "John Galt Solutions", position: "Junior AI/ML Software Engineer", duration: "Oct 2023 - Dec 2024" },
         { company: "Attalos", position: "Django Developer", duration: "Nov 2022 - Oct 2023" },
         { company: "Nexus Technology", position: "Backend Developer", duration: "Mar 2021 - Nov 2022" },
@@ -85,7 +85,7 @@ const techStacks = [
 
 const skills = {
     title: "My Skills",
-    description: "I'm skilled in building AI-powered full-stack web apps. I build interactive, high-performance apps with optimized performance using caching and message brokers to deploy scalable apps with robust back-end architecture. I also have experience in working with various ML tools including large language models (using APIs or local) and I’m passionate about building, training, and deploying models to create AI-powered solutions for real-world challenges.",
+    description: "I am a Senior Python Developer with over 5 years of experience building scalable web applications and high-performance APIs. My expertise lies in designing robust backend architectures that integrate advanced AI/ML capabilities with professional-grade engineering standards. I have a proven track record of delivering complex systems for US-based projects, ranging from real-time repository synchronization to profitability monitoring software.",
     skillList: techStacks.map((stack, index) => {
         return {
             name: stack.name,

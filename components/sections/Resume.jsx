@@ -51,7 +51,7 @@ const techStacks = [
     { name: "Jquery", src: "/assets/techstacks/Jquery.svg" },
     { name: "React", src: "/assets/techstacks/React.svg" },
     { name: "Tailwind CSS", src: "/assets/techstacks/Tailwind CSS.svg" },
-    { name: "Shadcnui", src: "/assets/techstacks/Shadcnui.svg" },
+    { name: "Shadcn", src: "/assets/techstacks/Shadcn.svg" },
     { name: "Next.js", src: "/assets/techstacks/Next.js.svg" },
     { name: "Node.js", src: "/assets/techstacks/Node.js.svg" },
     { name: "Python", src: "/assets/techstacks/Python.svg" },
@@ -61,7 +61,7 @@ const techStacks = [
     { name: "Flask", src: "/assets/techstacks/Flask.svg" },
     { name: "MySQL", src: "/assets/techstacks/MySQL.svg" },
     { name: "MongoDB", src: "/assets/techstacks/MongoDB.svg" },
-    { name: "PostgresSQL", src: "/assets/techstacks/PostgresSQL.svg" },
+    { name: "PostgreSQL", src: "/assets/techstacks/PostgreSQL.svg" },
     { name: "Redis", src: "/assets/techstacks/Redis.svg" },
     { name: "RabbitMQ", src: "/assets/techstacks/RabbitMQ.svg" },
     { name: "Apache Kafka", src: "/assets/techstacks/Apache Kafka.svg" },
@@ -71,6 +71,7 @@ const techStacks = [
     { name: "HuggingFace", src: "/assets/techstacks/HuggingFace.svg" },
     { name: "NGINX", src: "/assets/techstacks/NGINX.svg" },
     { name: "Docker", src: "/assets/techstacks/Docker.svg" },
+    { name: "Kubernetes", src: "/assets/techstacks/Kubernetes.svg" },
     { name: "Github Actions", src: "/assets/techstacks/Github Actions.svg" },
     { name: "AWS", src: "/assets/techstacks/AWS.svg" },
     { name: "Git", src: "/assets/techstacks/Git.svg" },
@@ -78,9 +79,6 @@ const techStacks = [
     { name: "OpenAI", src: "/assets/techstacks/OpenAI.svg" },
     { name: "Groq", src: "/assets/techstacks/Groq.svg" },
     { name: "Ollama", src: "/assets/techstacks/Ollama.svg" },
-    { name: "Gradio", src: "/assets/techstacks/Gradio.svg" },
-    { name: "Stripe", src: "/assets/techstacks/Stripe.svg" },
-    { name: "Clerk", src: "/assets/techstacks/Clerk.svg" },
 ]
 
 const skills = {

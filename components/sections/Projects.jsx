@@ -41,26 +41,58 @@ const projects = [
     },
     {
         num: "02",
-        title: "Amharic GPT",
-        subtitle: "GPT-style Language Model Training Pipeline",
-        description: "This project provides the full training and fine-tuning pipeline for a custom GPT-style language model specialized for the Amharic language. Unlike most multilingual models where Amharic is a low-resource side case, this model is trained from scratch on 12+ GB of Amharic text and further adapted on smaller supervised datasets for task-specific improvements (dialogue, summarization, classification).",
+        title: "Attalos",
+        subtitle: "Real-Time Profitability Monitoring Platform",
+        description: "Attalos is a SaaS solution designed to help businesses track and optimize their profitability across various marketplaces. By providing real-time insights at the order-line level, it accounts for all relevant costs—including buy prices, pick & pack, advertising, and integrator fees.",
         stack: [
-            "Python", "PyTorch"
+            "Python", "Django", "HTML5", "CSS3", "Jquery", "JavaScript", "PostgreSQL", "Redis", "Docker"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
-            "/assets/projects/AmharicGPT/training-curves.png",
+            "/assets/projects/Attalos/homepage.png",
+            "/assets/projects/Attalos/dashboard.png",
+            "/assets/projects/Attalos/order-lines.png",
+            "/assets/projects/Attalos/edit-view.png",
+            "/assets/projects/Attalos/settings.png",
         ],
-        live: "",
-        github: "https://github.com/amha-kindu/amharic-gpt"
+        live: "https://demo.attalos.io/profitability/?startDate=2026-03-29&endDate=2026-04-27",
+        github: ""
     },
     {
         num: "03",
+        title: "Fidel AI",
+        subtitle: "End-to-End Amharic Conversational AI Platform",
+        description: "Fidel AI is an end-to-end Amharic conversational AI stack composed of four submodules: a custom GPT training pipeline for tokenizer, pretraining, and LoRA fine-tuning; an OpenAI-compatible inference service for real-time generation; a FastAPI backend for authentication, chat persistence, rate limiting, and SSE streaming; and a Next.js frontend for the user chat experience.",
+        stack: [
+            "Python",
+            "PyTorch",
+            "FastAPI",
+            "PostgreSQL",
+            "Redis",
+            "Next.js",
+            "React",
+            "Tailwind CSS",
+            "Docker",
+            "Kubernetes",
+            "Github Actions",
+        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
+        images: [
+            "/assets/projects/Fidel/home.png",
+            "/assets/projects/Fidel/login.png",
+            "/assets/projects/Fidel/chat_1.png",
+            "/assets/projects/Fidel/chat_2.png",
+            "/assets/projects/Fidel/chat_3.png",
+        ],
+        live: "",
+        github: "https://github.com/amha-kindu/fidel"
+    },
+    {
+        num: "04",
         title: "TranscriptMojo",
         subtitle: "Automated CPA Transcript Evaluation & Credit Gap Analysis",
         description:
             "TranscriptMojo is a smart web-based tool that helps aspiring CPAs determine whether their academic transcripts meet state board licensure requirements. Users can upload PDF or Excel transcripts, and the system—powered by LLMs and classification algorithms—automatically maps each course to the appropriate credit category (Accounting, Ethics, Business, etc.). The platform then highlights unmet credit areas and suggests targeted coursework.",
         stack: [
-            "Django", "Django REST", "React", "Tailwind CSS", "Shadcnui", "Docker", "PostgresSQL", "NLTK", "Groq", "AWS", "Swagger"
+            "Django", "Django REST", "React", "Tailwind CSS", "Shadcn", "Docker", "PostgreSQL", "NLTK", "Groq", "AWS", "Swagger"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
             "/assets/projects/TranscriptMojo/homepage.png",
@@ -77,30 +109,12 @@ const projects = [
         github: ""
     },
     {
-        num: "04",
-        title: "Attalos",
-        subtitle: "Real-Time Profitability Monitoring Platform",
-        description: "Attalos is a SaaS solution designed to help businesses track and optimize their profitability across various marketplaces. By providing real-time insights at the order-line level, it accounts for all relevant costs—including buy prices, pick & pack, advertising, and integrator fees.",
-        stack: [
-            "Python", "Django", "HTML5", "CSS3", "Jquery", "JavaScript", "PostgresSQL", "Redis", "Docker"
-        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
-        images: [
-            "/assets/projects/Attalos/homepage.png",
-            "/assets/projects/Attalos/dashboard.png",
-            "/assets/projects/Attalos/order-lines.png",
-            "/assets/projects/Attalos/edit-view.png",
-            "/assets/projects/Attalos/settings.png",
-        ],
-        live: "https://attalos.io",
-        github: ""
-    },
-    {
         num: "05",
         title: "Socialaize",
         subtitle: "Social Media Management Platform",
         description: "Socialaize is a platform that helps users to manage and schedule their posts on various social media platforms, including Twitter, LinkedIn, and other. Additionally, it offers features such as commenting, replying to comments, and post recommendations for different social media platforms.",
         stack: [
-            "React", "Tailwind CSS", "Python", "Django", "PostgresSQL", "AWS", "Docker", "OpenAI", "X", "Redis"
+            "React", "Tailwind CSS", "Python", "Django", "PostgreSQL", "AWS", "Docker", "OpenAI", "X", "Redis"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} icon_type={item === "X" ? "png" : undefined} />)),
         images: [
             "/assets/projects/Socialaize/Homepage.png",
@@ -137,28 +151,11 @@ const projects = [
     },
     {
         num: "07",
-        title: "LissanX",
-        subtitle: "English-to-Amharic Translating Model",
-        description: "A custom Transformer-based neural machine translation model for English to Amharic translation, implemented from scratch in PyTorch and deployed with Gradio for interactive use.",
-        stack: [
-            "Python", "PyTorch", "GoogleColab", "NLTK", "HuggingFace", "Gradio"
-        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
-        images: [
-            "/assets/projects/LissanX/Example-1.png",
-            "/assets/projects/LissanX/Example-2.png",
-            "/assets/projects/LissanX/Example-3.png",
-            "/assets/projects/LissanX/Example-4.png",
-        ],
-        live: "https://huggingface.co/spaces/amha-kindu/LissanX",
-        github: "https://huggingface.co/spaces/amha-kindu/LissanX/tree/main"
-    },
-    {
-        num: "08",
         title: "Rideshare",
         subtitle: "",
         description: "Rideshare is a mobile-based platform enabling users to book, share, and manage rides collaboratively. Key features include a dynamic ride-booking system, real-time ride notifications, and comprehensive user profile management, all backed by secure, scalable backend architecture. The platform integrates advanced scheduling algorithms to match riders efficiently, optimizes route sharing.",
         stack: [
-            "CSharp", "NET", "NET CORE", "SignalR", "Mapbox", "PostgresSQL", "Docker", "Swagger"
+            "CSharp", "NET", "NET CORE", "SignalR", "Mapbox", "PostgreSQL", "Docker", "Swagger"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
             "/assets/projects/Rideshare/Homepage.png",
@@ -174,43 +171,24 @@ const projects = [
         github: "https://github.com/amhakindu/Rideshare"
     },
     {
-        num: "09",
+        num: "08",
         title: "NFT-Gebeya",
         subtitle: "Marketplace for Digital Products as NFTs",
         description: "NFT-Gebeya is  a robust online platform that facilitates the trading and showcasing of digital products as NFTs. The platform will support a wide range of digital assets, including artwork, photography, ebooks, collectibles, audio and video.",
         stack: [
-            "CSharp", "NET", "NET CORE", "SignalR", "PostgresSQL", "AWS", "Docker", "Swagger", "OpenAI", "Ethereum", "Solidity"
+            "CSharp", "NET", "NET CORE", "SignalR", "PostgreSQL", "AWS", "Docker", "Swagger", "OpenAI", "Ethereum", "Solidity"
         ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
         images: [
-            "/assets/projects/NFT-Gebeya/Homepage.png",
-            "/assets/projects/NFT-Gebeya/HowItWorks.png",
-            "/assets/projects/NFT-Gebeya/TopCreators.png",
-            "/assets/projects/NFT-Gebeya/UserProfile.png",
-            "/assets/projects/NFT-Gebeya/Auction.png",
-            "/assets/projects/NFT-Gebeya/MintNFT.png",
+            "/assets/projects/NftGebeya/Homepage.png",
+            "/assets/projects/NftGebeya/HowItWorks.png",
+            "/assets/projects/NftGebeya/TopCreators.png",
+            "/assets/projects/NftGebeya/UserProfile.png",
+            "/assets/projects/NftGebeya/Auction.png",
+            "/assets/projects/NftGebeya/MintNFT.png",
         ],
         live: "https://nft-marketplace-rose-zeta.vercel.app/",
         github: "https://github.com/KaleabKindu/NFT_Marketplace"
-    },
-    {
-        num: "10",
-        title: "InboXpert",
-        subtitle: "AI-Powered Email Client",
-        description: "InboXpert is a cutting-edge, AI-enhanced email client built to streamline communication and optimize inbox management. It integrates OpenAI’s API to offer AI-driven functionalities such as predictive sorting, smart categorization, and automated responses.",
-        stack: [
-            "React", "Tailwind CSS", "Next.js", "OpenAI", "PostgresSQL", "Stripe", "Clerk", "Prisma", "Pinecone"
-        ].map((item, index) => (<TechStack key={index} size={40} name={item} />)),
-        images: [
-            "/assets/projects/InboXpert/homepage.png",
-            "/assets/projects/InboXpert/signin.png",
-            "/assets/projects/InboXpert/dashboard.webp",
-            "/assets/projects/InboXpert/compose-email.png",
-            "/assets/projects/InboXpert/ai-compose.png",
-            "/assets/projects/InboXpert/subscription.png",
-        ],
-        live: "https://inboxpert.vercel.app",
-        github: "https://github.com/amha-kindu/InboXpert"
-    },
+    }
 ]
 
 
